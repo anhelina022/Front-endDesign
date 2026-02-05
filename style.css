@@ -5,15 +5,25 @@
 }
 
 .body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: #fff;
-    /* font-size: 16px; */
+    font-size: 16px;
+
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hero{
     height: 100vh;
-
     background-image: url("./img/f32e62809021eaef6531b9c6ab6839f73d0a6eed.jpg");
     background-size: cover;
     background-position: center;
@@ -30,8 +40,6 @@
     padding: 16px 50px;
     width: 1104;
     height: 40;
-    top: 14px;
-    left: 88px;
 }
 
 .header-inner{
@@ -49,59 +57,101 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: #1E1E1E;
-;
 }
 
 .nav {
+    /* width: 400px; */
+    height: 37px;
     display: flex;
     align-items: center;
     gap: 13px;
     padding: 4px;
     background-color: rgba(178, 178, 178, 0.3);
-    border-radius: 16px;
+    border-radius: 18px;
     backdrop-filter: blur(4px);
-
-    
-
+    white-space: nowrap;
 }
 
 
 .nav-link{
     text-decoration: none;
+    font-family: 'Inter';
     color: #333;
     font-size: 14px;
     padding: 1px 10px;
     border-radius: 12px;
-    display: flex;
     align-items: center;
 }
 
+
 .nav-link.active {
+    text-align: center;
+    font-family: 'Inter';
+    width: 70px;
+    height: 30px;
     background: #55452E;
     color: #fff;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.liSvg{
+    background-color: rgba(178, 178, 178, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    display: flex;
 }
 
 .main{
-    flex: 1;
     display: flex;
     align-items: center;
+}
+
+.containerMain{
+    margin: 10px 200px;
 }
 
 .decor{
     font-family: 'Source Serif 4', sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     color: #fff;
-
-
+    padding-top: 50px;
 }
 
-.container{
-    width: 100%;
-    max-width: 1200px;
-
-    margin: 0 auto;
-    padding: 0 20px;
+.text{
+    font-family: 'Source Serif Pro';
+    font-weight: 300;
+    font-style: Light;
+    font-size: 25px;
+    color: #fff;
 }
+
+.btn{
+    font-family: 'Source Serif Pro';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    color: #fff;
+    width: 144px;
+    height: 42px;
+    border-radius: 20px;
+    background-color: #55452E;
+    border: none;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
 
 /* .footer{
 
